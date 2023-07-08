@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name ="description" content= "Actividad 9">
+  <meta name="keywords" content="Grids, Cards, Responsivo, Bootstrap">
+  <meta name="author" content="Campos Pacheco Carlos Angus">
+  <title>Tienda de Videojuegos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top h-auto pb-3 pt-3">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="Inicio.html">
+          <img class="rounded" src="Image/Punpun.jpg" width="30" height="30" alt="logo"/>
+          PunGames
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="Menu.html">Tiendas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Cupones.html">Cupones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Lista de Deseos</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0 align-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Crear cuenta</a>
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          
+            <form>
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="loginEmail" placeholder="Ingresa tu correo electrónico" required>
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="loginPassword" placeholder="Ingresa tu contraseña" required>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registerModalLabel">Crear cuenta</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           
+            <form>
+              <div class="mb-3">
+                <label for="registerEmail" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="registerEmail" placeholder="Ingresa tu correo electrónico" required>
+              </div>
+              <div class="mb-3">
+                <label for="registerPassword" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="registerPassword" placeholder="Ingresa tu contraseña" required>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Crear cuenta</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+<main>
+
+  <div class="container my-4">
+    <div class="row">
+      <div class="col-12">
+        <a href="#" class="image-button">
+          <img src="Image/Thears.jpg" class="img-fluid mx-auto d-block" alt="Zelda">
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container text-center">
+    <div class="custom-border">
+      <h2 class="mt-5">Ya disponible</h2>
+      <button type="button" class="btn btn-danger">Más Información</button>
+    </div>
+  </div>
+
+  <article>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <h3 class="mb-4">
+            <span class="title-badge">Novedades</span>
+            <span class="badge bg-secondary">New</span>
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#" class="game-container">
+            <div class="console-container">
+              <div class="image-container">
+                <img src="Image/Elden.jpg" alt="Juego 1">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="game-container">
+            <div class="console-container">
+              <div class="image-container">
+                <img src="Image/Cup.jpg" alt="Juego 2">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <div class="d-flex justify-content-center">
+      <div id="demo" class="carousel slide mt-5" data-bs-ride="carousel" style="max-width: 600px;">
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-image-container">
+              <a href="#"> 
+                <div class="card">
+                  <img src="Image/Zelda.png" alt="Zelda" class="card-img-top" style="max-width: 300px; height: auto;">
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: 14px;">The Legend of Zelda: Breath of the Wild</h5>
+                    <p class="card-text" style="font-size: 12px;">Nintendo Switch</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-image-container">
+              <a href="#"> 
+                <div class="card">
+                  <img src="Image/MarioWonder.jpg" alt="MarioWonder" class="card-img-top" style="max-width: 300px; height: auto;">
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: 14px;">Super Mario Odyssey</h5>
+                    <p class="card-text" style="font-size: 12px;">Nintendo Switch</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-image-container">
+              <a href="#"> 
+                <div class="card">
+                  <img src="Image/Silksong.jpg" alt="SilkSong" class="card-img-top" style="max-width: 300px; height: auto;">
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: 14px;">Hollow Knight: Silksong</h5>
+                    <p class="card-text" style="font-size: 12px;">Nintendo Switch, PC</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    
+    
+      
+       
+      
+      <hr class="divider-line">
+      <section>
+        
+<div class="container mt-5">
+  <h2 class="mt-5">Tienda de juegos</h2>
+  <br>
+  <div class="row">
+    <div class="col text-center">
+      <a href="#" class="image-button">
+        <img src="Image/Tienda.jpg" alt="Tienda" class="img-fluid">
+      </a>
+    </div>
+  </div>
+</div>
+
+          <hr class="divider-line">
+
+          
+          <section>
+            <div class="container mt-5">
+              <h2 class="mt-5">Explora las consolas de Videojuegos</h2>
+              <br>
+              <div class="row">
+                <div class="col">
+                  
+                  <div class="row">
+                    <div class="col">
+                      <div class="console-container">
+                        <div class="console-img">
+                          <img src="Image/Xbox.jpg" alt="Xbox">
+                        </div>
+                        <div class="console-details">
+                          <h3 class="console-title text-danger">Xbox</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="console-container">
+                        <div class="console-img">
+                          <img src="Image/Play.jpg" alt="PlayStation">
+                        </div>
+                        <div class="console-details">
+                          <h3 class="console-title text-danger">PlayStation</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="console-container">
+                        <div class="console-img">
+                          <img src="Image/Switch.jpg" alt="Nintendo Switch">
+                        </div>
+                        <div class="console-details">
+                          <h3 class="console-title text-danger">Nintendo Switch</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <center>
+            <button class="small-red-button">Más detalles</button>
+          </center>
+        </section>
+          
+
+      <hr class="divider-line">
+
+      <section>
+        <div class="container text-center mt-5">
+          <div class="row">
+              <div class="col-md-3">
+                  <h2 class="mt-5">Acerca de nuestra Tienda</h2>
+                  <ul class="no-bullets">
+                      <li><a href="#"><h4 class="red-text mb-0">Misión y Visión</h4></a></li>
+                      <li><a href="#"><h4 class="red-text mb-0">Historia</h4></a></li>
+                      <li><a href="#"><h4 class="red-text mb-0">Equipo</h4></a></li>
+                  </ul>
+              </div>
+      
+              <div class="col-md-3">
+                  <h2 class="mt-5">Tienda</h2>
+                  <ul class="no-bullets">
+                      <li><a href="#"><h4 class="red-text mb-0">Catálogo de Productos</h4></a></li>
+                      <li><a href="#"><h4 class="red-text mb-0">Ofertas</h4></a></li>
+                      <li><a href="#"><h4 class="red-text mb-0">Envío y Entrega</h4></a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <h2 class="mt-5">Asistencia</h2>
+                  <ul class="no-bullets">
+                      <li><a href="#"><h4 class="red-text mb-0">Preguntas Frecuentes</h4></a></li>
+                      <li><a href="#"><h4 class="red-text mb-0">Contacto</h4></a></li>
+                      <li><a href="#"><h4 class="red-text mb-0">Políticas de Devolución</h4></a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <h2 class="mt-5">Comunidad</h2>
+                  <ul class="no-bullets">
+                      <li><a href="#"><h4 class="red-text mb-0">Foros</h4></a></li>
+                      <li><a href="#"><h4 class="red-text mb-0">Eventos</h4></a></li>
+                      <li><a href="#"><h4 class="red-text mb-0">Colaboraciones</h4></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </section>
+    
+</main>
+
+<footer>
+  <div class="container-fluid p-5 bg-dark text-white text-center">
+    <div class="row">
+      <div class="col">
+        <h4>Información de contacto</h4>
+        <p>Teléfono: 123-456-789</p>
+        <p>Email: PunGames@gmail.com</p>
+        <p>Dirección: Calle Principal, Ciudad</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p>&copy; 2023 PunGames. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="estilos/bootstrap-5.3.0-dist/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
